@@ -1,4 +1,4 @@
-# Online-Retail-Customer-Segmentation
+# Term deposit marketing predicition and analysis
 I decided to go through with this project after checking the dataset and it made me think of how much of an interesting project this would be as it pushes me to cover multiple aspects
 of data science and statistics in general.
 
@@ -41,13 +41,17 @@ For banking and financial institutions, deposits represent a major souce of inco
 to attract potential depositors.
 
 In our case of study the bank used **telephonic marketing**, one of the most common and effective strategies to collect data, and in many cases call centers are hired to implement these kind of surveys. 
+And based on their findings developing a high accuracy model would be tremendously beneficial as it helps to identify potential customers and consequently improve the bank's number of depositors.
 
 The dataset consists of 16 features and a binary ouput variable:
 ![image](https://user-images.githubusercontent.com/60581207/119861551-d003e000-bf17-11eb-9a9d-fde85de606df.png)
 
-The data was originally clean, Hnce the absence of null values :
+The porject starts with an exploratory data analysis  to understand the general layout of the data, discover anomalies and hidden patterns that can provide valuable details.I tried to showcase the insights i uncovered using graphs for a more compelling representation of the data using barchats, statistical distributions, heatmaps and boxplots.
 
-![image](https://user-images.githubusercontent.com/60581207/119861711-fcb7f780-bf17-11eb-8392-0a27fc5957c4.png)
+
+
+
+
 
 
 
