@@ -43,6 +43,13 @@ to attract potential depositors.
 In our case of study the bank used **telephonic marketing**, one of the most common and effective strategies to collect data, and in many cases call centers are hired to implement these kind of surveys. 
 
 The dataset consists of 16 features and a binary ouput variable:
+![image](https://user-images.githubusercontent.com/60581207/119861551-d003e000-bf17-11eb-9a9d-fde85de606df.png)
+
+The data was originally clean, Hnce the absence of null values :
+
+![image](https://user-images.githubusercontent.com/60581207/119861711-fcb7f780-bf17-11eb-8392-0a27fc5957c4.png)
+
+
 
 
 
