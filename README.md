@@ -1,6 +1,6 @@
 # Term deposit marketing predicition and analysis
-I decided to go through with this project after checking the dataset and it made me think of how much of an interesting project this would be as it pushes me to cover multiple aspects
-of data science and statistics in general.
+Marketing strategy have always been an interesting topic for me as it is considered a crucial tool to reach customers. And today in this data driven environemnt, marketing is even more complexe and interesting than ever before specially for someone who is passionate about data driven technology as myself.
+This project represented an opportunity to learn and discover how data can actually contribute to the success of marketing campaigns and consequently the business's prosperity. 
 
 The dataset's source: https://www.kaggle.com/janiobachmann/bank-marketing-dataset
 
@@ -57,8 +57,8 @@ The dataset consists of 16 features and a binary ouput variable
 ![image](https://user-images.githubusercontent.com/60581207/119907834-791afc80-bf51-11eb-862f-c79e579bd5b8.png)
 
 
+Next comes the inferential statistics section where i try to estimate differences between groups using statistical tests such as :
 
- Next comes the inferential statistics section where i try to estimate differences between groups using statistical tests such as :
 * T-tests 
 * analysis of variance (ANOVA)
 * Chi-squared tests
@@ -74,7 +74,22 @@ The problem is to build a model which classifies individuals into potential depo
 But before diving into the model selection phase, it is imperative to go through preprocessing.Data should be transformed and scaleed for a better functioning model. 
 Our data contains multiple categorical string type features that need encoding and numerical data that has to be scaled or mormalized depending on the case.
 
-The scikit-learn library provides multiple classification algorithms like logistic regression, decision trees, K-nearest neighbors and bagging techniques. So it's tricky to determine the right one off the bat without proper testing. Gridsearchcv the scikit-learn function offers a way to navigate through this problem. Basically it outputs the optimal hyperparameters that can gurantee the highest performance a model. It was intuitive to make the Gridsearchcv loop through a list of classification models as to tell which is the most suitableate model.
+The scikit-learn library provides multiple classification algorithms like logistic regression, decision trees, K-nearest neighbors and bagging techniques. So it's tricky to determine the right one off the bat without proper testing. Gridsearchcv the scikit-learn function offers a way to navigate through this problem. Basically it outputs the optimal hyperparameters that can gurantee the highest performance a model. It was intuitive to make the Gridsearchcv loop through a list of classification models as to tell which is the most suitable model.
+
+![image](https://user-images.githubusercontent.com/60581207/120047155-3110de00-c014-11eb-9f5f-60030332aec4.png)
+
+Random forest and XGBoost both proved to be the best models according to Gridsearchcv function, but i had to go with the Random forest for its simplicity and the shorter timetime it takes during the training process.
+
+As i stated earlier, the main goal is to build a model that can **identify** potential depositors who are encoded as '1' in the output variable, that's why the **Recall** would be a more insightful metric to assess the model.
+
+The classification report of The model indicated the following:
+
+![image](https://user-images.githubusercontent.com/60581207/120049489-68828900-c01a-11eb-91a5-fcd4e512f492.png)
+
+The recall of the positive class is considered low according to the picture above, it is imperative improve either by feature engineering techniques, feeding more data to the model or hyperparameters optimization.  
+
+
+
 
 
 
