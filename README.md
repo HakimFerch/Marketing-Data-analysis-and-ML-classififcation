@@ -9,9 +9,12 @@ The dataset's source: https://www.kaggle.com/janiobachmann/bank-marketing-datase
 ## Project Intro/Objective
 
 The aim of this project is to identify customers who are more inclined into making a deposit. The data source provides over 16 personal details about contacted indivduals and their response to the possibility of making a deposit with a yes/no response
-I divided the project into 2 parts:
-* EDA and inferential statistics where i explore the data, extract insights and determine how features influence the outcome.
+I divided the project into 2 notebooks:
+* EDA and inferential statistics where i explore the data, extract insights and determine how features influence the outcome. 
+notebook's link : https://github.com/HakimFerch/Marketing-Data-analysis-and-ML-classififcation/blob/master/Exploratory%20and%20Inferential%20data%20analysis.ipynb
+
 * Feature engineering, model selection, implementing the classifcation model and optimizing the model to improve accuracy.
+notebook's link :https://github.com/HakimFerch/Marketing-Data-analysis-and-ML-classififcation/blob/master/Classification%20model.ipynb
 
 ### Methods Used
 
@@ -41,12 +44,42 @@ For banking and financial institutions, deposits represent a major souce of inco
 to attract potential depositors.
 
 In our case of study the bank used **telephonic marketing**, one of the most common and effective strategies to collect data, and in many cases call centers are hired to implement these kind of surveys. 
-And based on their findings developing a high accuracy model would be tremendously beneficial as it helps to identify potential customers and consequently improve the bank's number of depositors.
+Finally, the collected data could be used in the training of a high accuracy model would be tremendously beneficial as it helps to identify potential customers and consequently improve the bank's number of depositors.
 
-The dataset consists of 16 features and a binary ouput variable:
+The dataset consists of 16 features and a binary ouput variable
 ![image](https://user-images.githubusercontent.com/60581207/119861551-d003e000-bf17-11eb-9a9d-fde85de606df.png)
 
-The porject starts with an exploratory data analysis  to understand the general layout of the data, discover anomalies and hidden patterns that can provide valuable details.I tried to showcase the insights i uncovered using graphs for a more compelling representation of the data using barchats, statistical distributions, heatmaps and boxplots.
+### Exploratory and inferential Analysis
+ 
+ The porject starts with exploratory data analysis to understand the general layout of the data, discover anomalies and hidden patterns that can provide valuable details.I tried to showcase the insights i uncovered using graphs for a more compelling representation of the data with barchats, distribution plots, correlation heatmaps and boxplots.
+ 
+ ![image](https://user-images.githubusercontent.com/60581207/119907190-065d5180-bf50-11eb-8008-158f19be87b9.png) ![image](https://user-images.githubusercontent.com/60581207/119907465-a31fef00-bf50-11eb-83d9-df7166247318.png)
+![image](https://user-images.githubusercontent.com/60581207/119907834-791afc80-bf51-11eb-862f-c79e579bd5b8.png)
+
+
+
+ Next comes the inferential statistics section where i try to estimate differences between groups using statistical tests such as :
+* T-tests 
+* analysis of variance (ANOVA)
+* Chi-squared tests
+
+Moreover, i determine the confidence intervals with alpha=0.05 of different variables means specially the ones with the highest correlation with our target variable.
+![image](https://user-images.githubusercontent.com/60581207/119908866-db74fc80-bf53-11eb-99fb-46cc8e83b4cb.png)
+
+### Machine learning Classification model:
+
+The problem is to build a model which classifies individuals into potential depositors and not, hence the necessity to choose the most fitting classification model available.
+
+But before diving into the model selection phase, it is imperative to transform and scale the data for a better functioning model. Our data contains multiple categorical string type features that need encoding and numerical data that has to be scaled or mormalized depending on the case.
+
+Gridsearchcv the scikit-learn function offers a way to navigate through this problem. It helps to loop through predefined ranges of hyperparameters of a model while scoring 
+
+
+
+
+
+
+
 
 
 
