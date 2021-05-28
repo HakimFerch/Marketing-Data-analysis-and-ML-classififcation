@@ -62,6 +62,7 @@ The dataset consists of 16 features and a binary ouput variable
 * T-tests 
 * analysis of variance (ANOVA)
 * Chi-squared tests
+* CRAMER's V test
 
 Moreover, i determine the confidence intervals with alpha=0.05 of different variables means specially the ones with the highest correlation with our target variable.
 ![image](https://user-images.githubusercontent.com/60581207/119908866-db74fc80-bf53-11eb-99fb-46cc8e83b4cb.png)
@@ -70,9 +71,10 @@ Moreover, i determine the confidence intervals with alpha=0.05 of different vari
 
 The problem is to build a model which classifies individuals into potential depositors and not, hence the necessity to choose the most fitting classification model available.
 
-But before diving into the model selection phase, it is imperative to transform and scale the data for a better functioning model. Our data contains multiple categorical string type features that need encoding and numerical data that has to be scaled or mormalized depending on the case.
+But before diving into the model selection phase, it is imperative to go through preprocessing.Data should be transformed and scaleed for a better functioning model. 
+Our data contains multiple categorical string type features that need encoding and numerical data that has to be scaled or mormalized depending on the case.
 
-Gridsearchcv the scikit-learn function offers a way to navigate through this problem. It helps to loop through predefined ranges of hyperparameters of a model while scoring 
+The scikit-learn library provides multiple classification algorithms like logistic regression, decision trees, K-nearest neighbors and bagging techniques. So it's tricky to determine the right one off the bat without proper testing. Gridsearchcv the scikit-learn function offers a way to navigate through this problem. Basically it outputs the optimal hyperparameters that can gurantee the highest performance a model. It was intuitive to make the Gridsearchcv loop through a list of classification models as to tell which is the most suitableate model.
 
 
 
