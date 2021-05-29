@@ -86,7 +86,16 @@ The classification report of The model indicated the following:
 
 ![image](https://user-images.githubusercontent.com/60581207/120049489-68828900-c01a-11eb-91a5-fcd4e512f492.png)
 
-The recall of the positive class is considered low according to the picture above, it is imperative improve either by feature engineering techniques, feeding more data to the model or hyperparameters optimization.  
+The recall of the positive class is considered low according to the picture above, it is imperative to improve it either by:
+
+* feature engineering techniques 
+* feeding more data to the model  
+* hyperparameters optimization
+
+Delivering over 0.98 AUC score and 0.92 recall, all 3 techniques proved valuable in improving the overall performance of the model. As demonstrated in the ROC-curve figure below.
+
+   ![image](https://user-images.githubusercontent.com/60581207/120085988-10f92180-c0dd-11eb-96c7-fcb19d693c23.png)
+
 
 
 
